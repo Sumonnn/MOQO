@@ -1,0 +1,156 @@
+@font-face {
+    font-family: head;
+    src: url(./font/Heading-Now-Variable.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-stretch: 1000%;
+    font-family: head;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+/* ----------------------p1---------------------------- */
+.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+}
+
+.nav-part2 p {
+    color: white;
+    font-weight: 300;
+}
+
+.nav-part2 p:nth-child(2) {
+    margin-right: 4vw;
+}
+
+.page1-center {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-left: 3.5vw;
+}
+
+.page1-center::-webkit-scrollbar {
+    display: none;
+}
+
+.page1-center>h1 {
+    font-size: 50vw;
+    font-weight: 900;
+    line-height: 40vw;
+    font-stretch: 250%;
+    text-transform: uppercase;
+}
+
+.page1-video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    scale: 0.6;
+}
+
+.page1-video>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------p2------------------------------------------ */
+.page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.page2-left {
+    width: 40%;
+    opacity: 0;
+}
+
+.page2-left-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.page2 .page2-left .page2-left-bottom>p {
+    width: 50%;
+    font-weight: 100;
+    font-size: 0.8vw;
+    color: black;
+}
+
+.page2-left-bottom>h3 {
+    font-size: 6vw;
+    line-height: 5.5vw;
+    color: black;
+    font-stretch: 600%;
+    font-weight: 500;
+}
+
+
+.page2-left>h3 {
+    font-size: 6vw;
+    line-height: 5.5vw;
+    color: black;
+    font-stretch: 600%;
+    font-weight: 500;
+}
+
+.page2-right {
+    text-align: right;
+    opacity: 0;
+}
+
+.page2-right>h3 {
+    font-size: 6vw;
+    line-height: 5.5vw;
+    color: black;
+    font-stretch: 600%;
+    font-weight: 500;
+}
